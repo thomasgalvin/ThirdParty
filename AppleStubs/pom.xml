@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.galvin.thirdparty.applestubs</groupId>
+  <artifactId>AppleStubs</artifactId>
+  <version>3.0</version>
+  <packaging>pom</packaging>
+  <name>Apple Stubs</name>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.2</version>
+        
+        <executions>
+          <execution>
+            <id>install-apple-java-1.0</id>
+            <phase>install</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            
+            <configuration>
+            <groupId>com.apple</groupId>
+            <artifactId>AppleJavaExtensions</artifactId>
+            <version>1.0</version>
+            <packaging>jar</packaging>
+            <file>AppleJavaExtensions.jar</file>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
