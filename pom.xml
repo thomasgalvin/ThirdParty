@@ -16,5 +16,6 @@
         <module>AppleStubs</module>
         <module>jBCrypt</module>
         <module>RText</module>
+        <module>DropWizardFileAssets</module>
     </modules>
 </project>
