@@ -98,17 +98,6 @@ public class FileAssetServlet extends HttpServlet {
                             Charset defaultCharset) {
         final String trimmedPath = SLASHES.trimTrailingFrom(filePath);
         this.resourcePath = trimmedPath.isEmpty() ? trimmedPath : trimmedPath + '/';
-        
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: *" );
-        System.out.println( "FileAssetServlet: resourcePath: " + resourcePath );
-        
         final String trimmedUri = SLASHES.trimTrailingFrom(uriPath);
         this.uriPath = trimmedUri.isEmpty() ? "/" : trimmedUri;
         this.indexFile = indexFile;
